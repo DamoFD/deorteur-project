@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /*Prevent horizontal scrolling*/
+}
+
+.page1, .page2 {
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+
+.page1 {
+    background: no-repeat center/cover url("images/main-image-1.jpg");
+}
+
+.page2 {
+    position: relative;
+    background-color:rgb(25, 25, 25);
+    margin-top: 0; /* Remove any margin */
+}
+
+#top-header {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    border-bottom: 1px solid rgb(81, 80, 80);
+    padding-bottom: 20px;
+    top: 0;
+    width: 100%;
+    /* position: absolute; */
+}
+
+#loc-img, #time-img, #call-img, #email-img {
+    width: 20px;
+}
+
+#loc-img {
+    width: 30px;
+}
+
+#loc-name, #timings, #call-number, #email-name {
+    font-size: 18px;
+    color: whitesmoke;
+    font-weight: 800;
+    margin-left: 7px;
+}
+
+#time-img {
+    margin-left: 6em;
+}
+
+#timings {
+    margin-left: 15px;
+}
+
+.call {
+    margin-left: 430px;
+    display: flex;
+    align-items: center;
+}
+
+.email {
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.bottom-header {
+    /* position: absolute; */
+    top: 55px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+#logo-img {
+    width: 80px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 14px;
+}
+
+#logo-name {
+    font-size: 26px;
+    color: burlywood;
+    font-weight: 900;
+    margin-top: 30px;
+}
+
+.middle-section {
+    display: flex;
+    margin-top: 5rem;
+    margin-left: 330px;
+}
+
+.option-tags {
+    color: white;
+    margin-left: 50px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.right-section {
+    background-color: rgb(188, 145, 89);
+    margin-left: 22em;
+    padding: 1.4em;
+    margin-top: 1.7em;
+}
+
+#catering {
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: 800;
+    word-spacing: 4px;
+}
+
+.main-page-title {
+    /* position: absolute; */
+    top: 28%;
+    left: 22%;
+}
+
+.title {
+    color: white;
+    font-size: 16px;
+    margin-left: 21rem;
+    font-weight: 900;
+}
+
+#separator {
+    width: 200px;
+    opacity: 0.7;
+    margin-top: 1.7em;
+    margin-left: 23.3em;
+}
+
+.food {
+    width: 800px;
+    color: rgb(231, 231, 231);
+    margin-top: 2rem;
+    margin-left: 1.5em;
+    font-size: 7rem;
+    word-spacing: 10px;
+}
+
+.feel-food {
+    color: rgb(231, 231, 231);
+    margin-top: 1rem;
+    margin-left: 13.8em;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.view-our-menu-div {
+    border: 3px solid rgb(209, 163, 103);
+    border-radius: 50px;
+    width: 200px;
+    height: 80px;
+    margin-left: 24rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-our-menu {
+    font-size: 1rem;
+    font-weight: 800;
+    color: rgb(216, 179, 130);
+}
+
+.book-table-div {
+    /* position: absolute; */
+    bottom: 5rem;
+    right: 3rem;
+    background-color: burlywood;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-table-div img {
+    width: 80px;
+    height: 80px;
+}
+
+.book-table-div p {
+    margin-top: 10px;
+    font-weight: 800;
+}
+
+.shape1{
+    position: absolute;
+    bottom:0px;
+    left:0px
+}
+.shape2{
+    position: absolute;
+    top:0px;
+    right:0px
+}
+.page-2-tile-1{
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.page-2-tile-1 #flavour{
+    margin-top: 10px;
+    font-size: 1rem;
+    color:wheat; font-weight: 800;
+}
+#separator-2{
+    width: 150px;
+    margin-top:1rem;
+    opacity: 0.8;
+}
+.page-2-tile-1 #top-notch{
+    font-size: 4rem; font-family: Crimson Text Static; color:whitesmoke;
+    margin-top:2.8rem
+}
+.page-2-tile-1 #lorem{
+    display: inline-block;
+    width:40rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.image-design-1{
+    display: inline-block;
+    display: flex;
+    flex-direction: column; justify-content: center;
+    margin-left:15em;
+    /* background-color: red; */
+}
+.image-design-1 #image{
+    /* position: absolute; */
+    width:16rem; height: 21rem;
+    z-index: 3;
+    top:25%;left:15%;
+}
+.image-design-1 #pattern{
+    position: relative;
+    opacity: 0.7;
+    width:19rem; height: 25rem;
+    margin-top: 0rem; margin-left:16rem;
+}
+
+.image-design-2{
+    display: inline-block;
+    display: flex;
+    /* flex-direction: column; justify-content: center; */
+    margin-left:35em;
+}
+.image-design-2 #image{
+    position: absolute;
+    width:16rem; height: 21rem;
+    z-index: 3;
+    top:40%;left:42%;
+}
+.image-design-2 #pattern{
+    position: relative;
+    opacity: 0.7;
+    width:19rem; height: 25rem;
+    /* margin-top: 10rem; margin-left:12rem; */
+}
+
+.image-design-3{
+    /* top:30%; left:30%; */
+    display: inline-block;
+}
+.image-design-3 #image{
+    position: absolute;
+    width:16rem; height: 21rem;
+    z-index: 3;
+    top:25%;left:70%;
+}
+.image-design-3 #pattern{
+    position: relative;
+    opacity: 0.7;
+    width:19rem; height: 25rem;
+    /* margin-top: 10rem; margin-left:12rem; */
+}
+#breakfast{
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 800;
+    color:wheat; 
+    margin-left:1.5em; margin-top:1em;  
+    z-index:10
+}
+#Appetizers{
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 800;
+    color:wheat; 
+    margin-left:4em; margin-top:1em;  
+    z-index:10
+}
+#Drinks{
+    display: inline-block;
+    margin-top: 4.7rem;margin-left: 31rem;
+    font-size: 2rem;
+    font-weight: 800;
+    color:wheat;
+}

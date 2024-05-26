@@ -1,0 +1,166 @@
+#top-header{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left:30px;
+    margin-top:10px;
+    border-bottom: 1px solid rgb(81, 80, 80);
+    padding-bottom: 20px;
+}
+#loc-img{
+    width:30px;
+}
+#loc-name,#timings,#call-number,#email-name{
+    font-size: 18px;
+    color: whitesmoke;
+    font-weight: 500;
+    margin-left: 7px;
+    font-weight: 800;
+}
+
+#time-img{
+    margin-left: 6em;
+    width:20px; 
+}
+#timings{
+    margin-left:15px;
+}
+.call{
+    margin-left:430px;
+    display:flex;
+    align-items: center;
+}
+.email{
+    margin-left:100px;
+    display: flex;
+    align-items:center;
+}
+#call-img{
+    width:20px
+}
+#call-number{
+    font-size: 18px;
+}
+
+
+.bottom-header{
+    position: absolute;
+    /* background-color: rgb(233, 179, 114); */
+    /* opacity:0.9; */
+    top:55px;
+    display: flex;
+    align-items: center;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+}
+#logo-img{
+    width:80px;
+    margin-top:30px; 
+    margin-left:40px;
+    margin-right: 14px;
+}
+#logo-name{
+    font-size:26px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:burlywood;
+    font-weight: 900;
+    margin-top:30px;
+}
+
+.middle-section{
+    display: flex;
+    margin-top:5rem;
+    margin-left:330px
+}
+.option-tags{
+    color:white;
+    margin-left:50px;
+    font-size:16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.right-section{
+    background-color:rgb(188, 145, 89);
+    margin-left:22em;
+    padding:1.4em;
+    margin-top: 1.7em;
+
+}
+#catering{
+    color:rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: 800;
+    word-spacing: 4px;
+    font-family:Crimson Text Static;
+}
+
+.main-page-title{
+    position: absolute;
+    top:28%; left:22%
+}
+.title{
+    color:white;
+    font-size:16px;
+    margin-left:21rem;
+    font-family:Lexend Zetta;
+    /* word-spacing: 30px; */
+    font-weight: 900;
+}
+#separator{
+    width:200px;
+    opacity: 0.7;
+    margin-top:1.7em;
+    margin-left:23.3em
+}
+.food{
+    width:800px;
+    color:rgb(231, 231, 231);
+    margin-top:2rem;
+    margin-left: 1.5em;
+    font-size: 7rem;
+    word-spacing: 10px;
+    font-family:  Crimson Text Static
+}
+.feel-food{
+    color:rgb(231, 231, 231);
+    margin-top:1rem;
+    margin-left: 13.8em;
+    font-size: 1rem;
+    font-weight: 800;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.view-our-menu-div{
+    background-color: transparent;
+    border:3px solid rgb(209, 163, 103);
+    border-radius: 50px;
+    width:200px; height: 80px;
+    margin-left: 24rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;align-items: center;
+}
+.view-our-menu{
+    font-size: 1rem;font-weight: 800;
+    font-family: Reddit Mono;
+    color:rgb(216, 179, 130);
+}
+.book-table-div{
+    position: absolute;
+    bottom:5rem; right:3rem;
+    background-color: burlywood;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;align-items: center; justify-content: center;
+}
+.book-table-div img{
+    width: 80px;
+    height: 80px;
+}
+.book-table-div p{
+    margin-top:10px;
+    font-weight: 800;
+}

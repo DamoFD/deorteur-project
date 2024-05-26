@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prac</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Domine:wght@400..700&family=Lexend+Zetta:wght@100&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles/general.css"> -->
+    <!-- <link rel="stylesheet" href="styles/main.css"> -->
+    <link rel="stylesheet" href="styles/header.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /*Prevent horizontal scrolling*/
+}
+
+.page1, .page2 {
+    width: 100%;
+    height: 100vh;
+    /* position: relative; */
+}
+
+.page1 {
+    background: no-repeat center/cover url("images/main-image-1.jpg");
+}
+
+.page2 {
+    position: relative;
+    background-color:rgb(25, 25, 25);
+    margin-top: 0; /* Remove any margin */
+}
+
+#top-header {
+    
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-left:30px;
+    margin-top:10px;
+    border-bottom: 1px solid rgb(81, 80, 80);
+    padding-bottom: 20px;
+}
+
+#loc-img, #time-img, #call-img, #email-img {
+    width: 20px;
+}
+
+#loc-img {
+    width: 30px;
+}
+
+#loc-name, #timings, #call-number, #email-name {
+    font-size: 18px;
+    color: whitesmoke;
+    font-weight: 800;
+    margin-left: 7px;
+}
+
+#time-img {
+    margin-left: 6em;
+}
+
+#timings {
+    margin-left: 15px;
+}
+
+.call {
+    margin-left: 430px;
+    display: flex;
+    align-items: center;
+}
+
+.email {
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.bottom-header {
+    /* position: absolute; */
+    top: 55px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+#logo-img {
+    width: 80px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 14px;
+}
+
+#logo-name {
+    font-size: 26px;
+    color: burlywood;
+    font-weight: 900;
+    margin-top: 30px;
+}
+
+.middle-section {
+    display: flex;
+    margin-top: 5rem;
+    margin-left: 330px;
+}
+
+.option-tags {
+    color: white;
+    margin-left: 50px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.right-section {
+    background-color: rgb(188, 145, 89);
+    margin-left: 22em;
+    padding: 1.4em;
+    margin-top: 1.7em;
+}
+
+#catering {
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: 800;
+    word-spacing: 4px;
+}
+
+.main-page-title {
+    /* position: absolute; */
+    top: 28%;
+    left: 22%;
+}
+
+.title {
+    color: white;
+    font-size: 16px;
+    margin-left: 21rem;
+    font-weight: 900;
+}
+
+#separator {
+    width: 200px;
+    opacity: 0.7;
+    margin-top: 1.7em;
+    margin-left: 23.3em;
+}
+
+.food {
+    width: 800px;
+    color: rgb(231, 231, 231);
+    margin-top: 2rem;
+    margin-left: 1.5em;
+    font-size: 7rem;
+    word-spacing: 10px;
+}
+
+.feel-food {
+    color: rgb(231, 231, 231);
+    margin-top: 1rem;
+    margin-left: 13.8em;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.view-our-menu-div {
+    border: 3px solid rgb(209, 163, 103);
+    border-radius: 50px;
+    width: 200px;
+    height: 80px;
+    margin-left: 24rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-our-menu {
+    font-size: 1rem;
+    font-weight: 800;
+    color: rgb(216, 179, 130);
+}
+
+.book-table-div {
+    /* position: absolute; */
+    bottom: 5rem;
+    right: 3rem;
+    background-color: burlywood;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-table-div img {
+    width: 80px;
+    height: 80px;
+}
+
+.book-table-div p {
+    margin-top: 10px;
+    font-weight: 800;
+}
+
+.shape1{
+    position: absolute;
+    bottom:0px;
+    left:0px
+}
+.shape2{
+    position: absolute;
+    top:0px;
+    right:0px
+}
+.page-2-tile-1{
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.page-2-tile-1 #flavour{
+    margin-top: 10px;
+    font-size: 1rem;
+    color:wheat; font-weight: 800;
+}
+#separator-2{
+    width: 150px;
+    margin-top:1rem;
+    opacity: 0.8;
+}
+.page-2-tile-1 #top-notch{
+    font-size: 4rem; font-family: Crimson Text Static; color:whitesmoke;
+    margin-top:2.8rem
+}
+.page-2-tile-1 #lorem{
+    display: inline-block;
+    width:40rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.image-design-1{
+    display: inline-block;
+    display: flex;
+    flex-direction: column; justify-content: center;
+    margin-left:15em;
+    /* background-color: red; */
+}
+.image-design-1 #image{
+    /* position: absolute; */
+    width:16rem; height: 21rem;
+    z-index: 3;
+    top:25%;left:15%;
+}
+.image-design-1 #pattern{
+    position: relative;
+    opacity: 0.7;
+    width:19rem; height: 25rem;
+    margin-top: 0rem; margin-left:16rem;
+}
+
+.image-design-2{
+    display: inline-block;
+    display: flex;
+    /* flex-direction: column; justify-content: center; */
+    margin-left:35em;
+}
+.image-design-2 #image{
+    position: absolute;
+    width:16rem; height: 21rem;
+    z-index: 3;
+    top:40%;left:42%;
+}
+.image-design-2 #pattern{
+    position: relative;
+    opacity: 0.7;
+    width:19rem; height: 25rem;
+    /* margin-top: 10rem; margin-left:12rem; */
+}
+
+.image-design-3{
+    /* top:30%; left:30%; */
+    display: inline-block;
+}
+.image-design-3 #image{
+    position: absolute;
+    width:16rem; height: 21rem;
+    z-index: 3;
+    top:25%;left:70%;
+}
+.image-design-3 #pattern{
+    position: relative;
+    opacity: 0.7;
+    width:19rem; height: 25rem;
+    /* margin-top: 10rem; margin-left:12rem; */
+}
+/* .page-2-services{
+    display: inline-block;
+} */
+#breakfast{
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 800;
+    color:wheat; 
+    margin-left:1.5em; margin-top:1em;  
+    z-index:10
+}
+#Appetizers{
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 800;
+    color:wheat; 
+    margin-left:4em; margin-top:1em;  
+    z-index:10
+}
+#Drinks{
+    display: inline-block;
+    margin-top: 4.7rem;margin-left: 31rem;
+    font-size: 2rem;
+    font-weight: 800;
+    color:wheat;
+}
+
+    </style>
+</head>
+<body>
+    <div class="page1">
+        <div id="top-header" class="page1-header">
+            <img id="loc-img" src="images/loc-img.png"> 
+            <span id="loc-name">Restaurant St, Delicious City, Hyderabad, India</span>
+            <img id="time-img" src="images/time-icon.png">
+            <pre><span id="timings">Daily :  10:00 am to 11:00 pm</span></pre>
+            <div class="call">
+                <img id="call-img" src="images/call-icon.png">
+                <span id="call-number">+91 8710291511</span>
+            </div>
+            <div class="email">
+                <img id="email-img" src="images/email-icon.png">
+                <span id="email-name">restaurant12book@gmail.com</span>
+            </div>   
+        </div>
+        <div class="bottom-header">
+            <div class="left-section">
+                <img id="logo-img" src="images/logo.png">
+                <span id="logo-name">Fedelior</span>
+            </div>
+            <div class="middle-section">
+                <div class="option-tags">HOME</div>
+                <div class="option-tags">MENUS</div>
+                <div class="option-tags">ABOUT US</div>
+                <div class="option-tags">OUR CHEFS</div>
+                <div class="option-tags">CONTACT US</div>
+            </div>
+            <div class="right-section">
+                <span id="catering">ORDER CATERING ONLINE</span>
+            </div>
+        </div>
+        
+        <div class="main-page-title">
+            <div class="title">TRADITIONAL & HYGINE</div>
+            <img id="separator" src="images/separator.svg">
+            <div class="food">For the love of Delicious food</div>
+            <div class="feel-food">Visit along with your family & friends to feel the mouthwatering food</div>
+            <div class="view-our-menu-div">
+                <span class="view-our-menu">VIEW OUR MENU</span>
+            </div>
+        </div>
+        <div class="book-table-div">
+            <img src="images/book-table-icon-black.png">
+            <p>BOOK A TABLE</p>
+        </div>
+    </div>
+    <div class="page2">
+       <div class="shape1"><img src="images/shape-1.png"></div>
+       <div class="shape2"><img src="images/shape-2.png"></div>
+       <div class="page-2-tile-1">
+            <p id="flavour">FLAVOURS FOR ROYALTY</p>
+            <img id="separator-2" src="images/separator.svg">
+            <p id="top-notch">We Offer Top Notch</p>
+            
+       </div>
+       <div class="image-design-1">
+            <img id="image" src="images/service-1.jpg">
+            <p class="page-2-services" id="breakfast">Breakfast</p>
+            <!-- <img id="pattern" src="images/img-pattern.svg"> -->
+       </div> 
+       <div class="image-design-2">
+            <img id="image" src="images/service-2.jpg">
+            <p class="page-2-services" id="Appetizers">Appetizers</p>
+            <!-- <img id="pattern" src="images/img-pattern.svg"> -->
+        </div>
+        <div class="image-design-3">
+            <img id="image" src="images/service-3.jpg">
+            <p class="page-2-services" id="Drinks">Drinks</p>
+            <!-- <img id="pattern" src="images/img-pattern.svg"> -->
+        </div>
+        
+        
+        
+        
+    </div>
+</body>
+</html>
