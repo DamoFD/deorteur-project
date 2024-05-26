@@ -212,6 +212,7 @@ body, html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 1em;
 }
 
 .book-table-div img {
@@ -324,7 +325,7 @@ body, html {
 
 .page3-section1{
     display: flex; flex-direction: column; align-items: center;
-    margin-top: 0.7em;
+    padding-top: 0.7em;
 }
 #page3-title{
     font-size: 1rem; font-weight: 800;
@@ -342,7 +343,7 @@ body, html {
 .grid-container-1{
     margin-top:2em;
     display: grid;
-    grid-template-columns: 550px 550px;  column-gap: 10em;
+    grid-template-columns: 550px 550px;
     justify-content: center;
 }
 .left-div{
@@ -351,6 +352,7 @@ body, html {
 }
 .right-div{
     display: flex; flex-direction: column; gap:4em;
+    margin-left: 5em;
 }
 .dish{
     display: grid; grid-template-columns: 100px 1fr; column-gap: 15px;
@@ -380,6 +382,10 @@ body, html {
     color:rgb(171, 171, 171);
 }
 
+.page3{
+    background-color:rgb(25, 25, 25);
+}
+
 .page3-section2{
     margin-top:2em;
     display: flex; flex-direction: column; align-items: center;
@@ -405,31 +411,86 @@ body, html {
     height:600px; 
     
     display: grid; grid-template-columns: 50em 30em;
+}
 
+/* Contact Us */
+.contact-section{
+    width: 100%;
+    padding-top: 5em;
+    display: flex;
+    background-color:rgb(25, 25, 25);
 }
-.online-reservation{
-    background-color:rgb(19, 19, 19);
-    display: flex; align-items: center; justify-content: center;
-    
+
+.form-container{
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.online-reservation-flex{
-    width:43em; height: 30em; 
-    background-color: aqua;
-    display: flex; flex-direction: column; align-items: center;
+
+.contact-header{
+    font-size: 6rem;
+    color:whitesmoke;
 }
-.title-online{
-    font-size:3.5em; color:whitesmoke;
+
+.contact-sub{
+    font-size: 1.5rem;
+    color: whitesmoke;
 }
-.contact-us{
-    background-color: rgb(22, 22, 22);
-    /* background: url("images/pattern-2.png"); 
-    background-repeat: repeat; */
+
+.link-text{
+    color: burlywood;
 }
-.form{
-    padding: 10px;
-    font-size: 16px; 
-    background-color: black;
+
+.contact-form{
+    margin-top: 3em;
+    width: 90%;
 }
-.name-input {
-    width: 200px; /* Set the fixed width */   
+
+.text-input-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-input{
+    width: 49%;
+}
+
+.input{
+    background-color: #313338;
+    padding: 10px 20px;
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+.select-input-container{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select-input{
+    width: 32%;
+}
+
+.textarea-input{
+    width: 100%;
+    margin-top: 1em;
+    height: 10em;
+}
+
+.input::placeholder{
+    color: whitesmoke;
+}
+
+.book-button{
+    background-color: burlywood;
+    color: black;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 1.5rem;
+    margin-top: 1em;
+    padding: 10px 20px;
 }
